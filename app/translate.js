@@ -34,7 +34,7 @@ translateBtn.addEventListener("click", () => {
   let translateFrom = selectTag[0].value
   let translateTo = selectTag[1].value
 
-  let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}&de=daisylotus623@gmail.com`
+  let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`
 
   if (fromText.value == "") {
     toText.value = "Please enter text"
