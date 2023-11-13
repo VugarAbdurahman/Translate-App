@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate</title>
+    <link rel="stylesheet" href="translate.css" />
+
+    <!-- Font Awesome CDN Link for Icons and Google Font Poppins-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Contain -->
+      <div class="wrapper">
+        <!-- Text Inputs -->
+        <div class="text-input">
+          <!-- From text -->
+          <textarea class="from-text" placeholder="Enter text"></textarea>
+          <!-- To Text Translation -->
+          <textarea
+            class="to-text"
+            placeholder="Translation"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+
+        <!-- Controls -->
+        <ul class="controls">
+          <!-- Row From -->
+          <li class="row from">
+            <!-- Voice And Copy icon -->
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <!-- Countries -->
+            <select></select>
+          </li>
+          <!-- Exchange Icon -->
+          <li class="exchange"><i class="fas fa-exchange"></i></li>
+          <!-- Row To -->
+          <li class="row to">
+            <!-- Countries -->
+            <select></select>
+            <!-- Voice And Copy icon -->
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <button class="btn">Translate</button>
+    </div>
+    <script src="app/countries.js"></script>
+    <script src="app/translate.js"></script>
+  </body>
+</html>
